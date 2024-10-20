@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixels</title>
+</head>
+<body>
+    <header> 
+        <button id="logoutButton" data-tooltip="Exit"> <img src="../assets/images/x-solid.svg" alt="Logout"></button>
+        <button id="backButton" data-tooltip="Back"> <img src="../assets/images/arrow-right-solid.svg" alt="Back"></button>
+        <h3 id="roomIdtext"> Room: </h3>
+    </header>
+    <canvas id="myCanvas" width="1920" height="1080">  </canvas>
+    <link rel="stylesheet" href="../styles/room.css">
+
+    <div id="MyModal" class="modal">
+        <div class="modal-content">
+            <form id="chatForm">
+                <input type="text" id="message" name="message" placeholder="Write a message...." required>
+                <input type="submit" id="chatBtn">
+            </form>
+          </div>
+    </div>
+
+    <script type="module"  src="/scripts/room.js"></script>
+    <script type="module"  src="/scripts/player.js"></script>
+    <script type="module" src="/scripts/input.js"></script>
+ <!--    <script type="module" src="/scripts/canvas.js"></script> -->
+    <style src="/styles/room.css"></style>
+</body>
+</html>
