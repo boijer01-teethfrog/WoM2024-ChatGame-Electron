@@ -5,10 +5,10 @@ const path = require('path')
 function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    icon: path.join(__dirname, 'assets', 'images', 'pixels.ico'),
     width: 800,
     height: 600,
     webPreferences: {
+      icon: 'assets/images/pixels.ico',
       preload: path.join(__dirname, 'preload.js'),
       nodeIntegration: true,  // Gör det möjligt att köra Node.js-moduler i renderer-processen
       contextIsolation: true // Tillåter Electron och Node.js API:er i renderer

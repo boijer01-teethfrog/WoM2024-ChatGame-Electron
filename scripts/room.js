@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         logoutButton.addEventListener('click', () => {
             localStorage.clear();
             console.log('User logged out');
-            window.location.href = '../user/login';
+            window.location.href = '../pages/login.html';
         });
     } 
 });
