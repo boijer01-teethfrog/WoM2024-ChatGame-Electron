@@ -51,6 +51,6 @@ document.getElementById('join-room-button').addEventListener('click', function()
     } else {
         errorMessage.style.display = 'none';
         localStorage.setItem('roomId', roomCode);
-        window.location.href = `/pages/room.html`;
+        window.location.href = `../pages/room.html`;
     }
 });
