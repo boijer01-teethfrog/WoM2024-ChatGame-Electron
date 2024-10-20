@@ -27,7 +27,7 @@ async function register(respData, pass) {
       localStorage.setItem("isLoggedIn", "true");
       localStorage.setItem("jwt", data.jwt);      
       localStorage.setItem("ws_token", data.wsToken); 
-      window.location.href = SELECT_URL;
+      window.location.href = "../pages/select.html";
     } else {
       console.error("Login failed:", data.msg);
       alert(`Login failed: ${data.msg}`);

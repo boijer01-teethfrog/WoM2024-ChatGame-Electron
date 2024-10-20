@@ -1,7 +1,9 @@
 //urls
-export const REGISTER_URL = `/user/register`;
-export const LOGIN_URL = `/user/login`;
-export const SELECT_URL = `/select`;
+// config.js
+export const LOGIN_URL = "https://wom-chatgame.azurewebsites.net/user/login";
+export const SELECT_URL = "/user/select";
+export const UPDATE_COLOR = "https://wom-chatgame.azurewebsites.net/user/updateColor"
+export const REGISTER_URL = `/register`;
 export const ROOM_URL = `/room`;
 export const APPNAME = `Pixels`;
 export const SOCKET_URL = `wss://wom-websocket.azurewebsites.net/?token=`

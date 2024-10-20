@@ -1,4 +1,4 @@
-import { getUsername, getHex } from "./config.js";
+import { getUsername, getHex, UPDATE_COLOR } from "./config.js";
 
 
 document.getElementById('greetingText').textContent = `Welcome ${getUsername()}!`
@@ -16,7 +16,7 @@ document.getElementById('color-picker').addEventListener('input', (event) => {
     debounceTimer = setTimeout(() => {
         (async () => {
             try {
-                const response = await fetch('/user/updateColor', {
+                const response = await fetch(UPDATE_COLOR, {
                     method: 'PATCH',
                     headers: {
                         'Content-Type': 'application/json'
@@ -51,6 +51,6 @@ document.getElementById('join-room-button').addEventListener('click', function()
     } else {
         errorMessage.style.display = 'none';
         localStorage.setItem('roomId', roomCode);
-        window.location.href = `/room/`;
+        window.location.href = `/pages/room.html`;
     }
 });
