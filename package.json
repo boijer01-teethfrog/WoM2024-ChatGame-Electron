@@ -20,7 +20,7 @@
   "devDependencies": {
     "electron": "^32.1.2",
     "nodemon": "^3.1.7",
-    "prisma": "^5.20.0"
+    "prisma": "^6.0.0"
   },
   "dependencies": {
     "@prisma/client": "^5.20.0",
